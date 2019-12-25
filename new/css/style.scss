@@ -1,0 +1,38 @@
+button{
+    background-color: grey;
+    color: black;
+    font-size: 14px;
+    padding: 15px 40px;
+    border: none;
+    margin: 20px 0; 
+}
+h3{
+    width: 47px;
+    background-color: lightgrey;
+    color: black;
+    font-size: 14px;
+    padding: 15px 40px;
+    border: none;
+    margin: 0;
+
+}
+
+#slides{
+    position: relative;
+    .slide{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .showing{
+        z-index: 2;
+        opacity: 1;
+    }
+}
